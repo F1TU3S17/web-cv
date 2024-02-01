@@ -39,6 +39,11 @@ header h1 {
     border-style: solid;
     border-radius: 8%;
 }
+@media(max-width:758px)  {
+    .info-about{  
+        max-width: 100%;
+    }
+}
 
 .little-info{
     max-width: 60%;
@@ -53,25 +58,15 @@ header h1 {
 .information-block{
     max-width: 60%;
     margin: auto;
+    
 }
 
-.project-info {
-    
-    max-width: 60%;
-    margin: auto;
-    padding: 2%;
 
-    border: 5px;
-    border-color: orange;
-    border-style: solid;
-    border-radius: 8%;
-    background-color: white;
-}
-
-.project-info img{
+.project-photo img {
     
-    max-width: 60%;
-    margin: auto;
+    max-width: 90%;
+    margin: 15px;
+    
     
     border: 2px;
     border-color: red;
