@@ -15,6 +15,7 @@ x.addEventListener("click", () => {
     modal.style.display = "none";
     modalBack.style.display = "none";
 });
+
 let countPhotoContChildren = modalPhotoCont.children.length;
 let i = 0;
 lButton.addEventListener("click", () => {
