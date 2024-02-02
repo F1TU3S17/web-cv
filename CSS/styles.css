@@ -168,4 +168,10 @@ nav{
 }
 .to-start p{
     margin: 5px;
+    text-decoration: none;
+}
+.to-start p:hover{
+    color: orangered;
+    text-decoration-color: red;
+    text-decoration:double;
 }
