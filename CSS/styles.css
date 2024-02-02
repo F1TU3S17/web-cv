@@ -23,12 +23,21 @@ body {
 #logo {
     background-color: #f1f1f1;
     position: fixed;
-    width: 40px;
+    top:0;
+    margin-top: 10px;
+    width: 45px;
+    transition: 0.5s ;
+    /*
+    animation-name: leftMenuAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards ; 
+    */
 }
 
 #logo:hover {
     cursor: pointer;
     opacity: 0.7;
+    
 }
 
 .my-photo img {
@@ -115,14 +124,7 @@ body {
     }
 }
 
-.vk:hover {
-    animation: hoverAnimation 0.5s ease-in-out;
-    opacity: 0.8;
-}
 
-.vk:active {
-    box-shadow: 2px 2px 5px black;
-}
 
 .button-my-photo {
     display: block;
@@ -175,3 +177,4 @@ nav{
     text-decoration-color: red;
     text-decoration:double;
 }
+

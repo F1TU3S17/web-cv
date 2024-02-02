@@ -33,10 +33,12 @@
     width: 95%;
     height: 10%;
     text-align: right;
+    transition-duration: 0.5s ;
 }
 
 .X:hover {
     cursor: pointer;
+    font-size: 46px;
 }
 
 .modal-photos-cont img {
@@ -74,12 +76,16 @@
     background: none;
     border: none;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
 .left-button img , .right-button img{
     width: 100%;
     margin: 10px;
 }
-
+.left-button:hover , .right-button:hover{
+    transform: scale(1.2);
+    
+}
 @media(max-width:700px){
     .modal-photos-cont {
         display: block;

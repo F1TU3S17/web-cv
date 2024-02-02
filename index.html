@@ -7,35 +7,37 @@
     <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
     <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="stylesheet" href="/CSS/modal-styles.css">
-    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="/CSS/leftpanel-styles.css">
     <title>Резюме</title>
 </head>
-
 <body>
     <header>
         <a name="head"></a>
         <div class="head">
-            <div>
-                <img id="logo" src="/image/phone.png" alt="CV-logo">
-            </div>
             <div class="name">
                 <h1>Мое Резюме</h1>
             </div>
         </div>
     </header>
-
     <hr color="orange">
-
     <main>
         <section>
+            <img id="logo" src="/image/phone.png" alt="CV-logo">
+            <div class="left-panel">
+                <div class="vk">
+                    <a href="https://vk.com/f1tu3s17" target="_blank"><img src="/image/vk-icon.png" width="40"></a>
+                </div>
+            <div class="tg">
+                <a href="https://t.me/Shtriban1714" target="_blank"><img src="/image/telega.png" width="40"></a>
+            </div>
+        </section>
 
+        <section>
             <div class="info-about">
                 <h2 align="center">Обо мне - About me </h2>
                 <div class="little-info">
                     <div class="my-photo">
-
-                        <img src="/image/Me.jpg">
-
+                        <img src="/image/avatar.jpg">
                     </div>
                     <div class="little-text">
                         <lu>
@@ -80,7 +82,7 @@
                         <tr>
                             <td>
                                 <a href="https://vk.com/wall-47535294_43773" target="_blank" title="Увидеть результат">
-                                    <img src="/image/autumn-hakaton.jpg" alt="autumn-hakaton"> </a>
+                                    <img src="/image/Me.jpg" alt="autumn-hakaton"> </a>
                             </td>
                             <td>
                                 <p>
@@ -112,21 +114,12 @@
             <a href="#head" class="to-start"><p>Вернуться в начало</p></a>
         </nav>
         <div class="podval">
-            <div class="vk">
-                <a href="https://vk.com/f1tu3s17" target="_blank"><img src="/image/vk-icon.png" width="40"></a>
-            </div>
+            
             <div class="autor">
                 <p>© 2024 F1tu3s17</p>
             </div>
         </div>
     </footer>
-    
-    <!--
-    <div>
-        <input id="btn" type="button" name="B" value="Нажми на меня">
-    </div>
-    <span class="count" onmouseover="">Счетчик при наведении: 0</span>
-    -->
     <div class='modal-background'>
     
     </div>
@@ -149,6 +142,8 @@
             <button class="right-button"> <img src="/image/arrow-right-circle-svgrepo-com.svg"> </button>
         </div>
     </div>
+    
+    <script src="JS/modalScript.js"></script>
+    <script src="JS/modalSocialScript.js"></script>
 </body>
-
 </html>
