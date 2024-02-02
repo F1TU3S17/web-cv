@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-body{
+body {
     background: #f1f1f1;
     color: #0f141e;
 
@@ -10,55 +10,60 @@ body{
 }
 
 
-.head { 
+.head {
     display: flex;
     width: 100%;
     text-align: center;
 }
+
 .name {
     width: 100%;
 }
 
-#logo{
+#logo {
+    background-color: #f1f1f1;
     position: fixed;
     width: 40px;
 }
 
 #logo:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
-.my-photo img{
+.my-photo img {
     max-width: 100%;
     margin: 10px;
     border: 2px;
     border-color: red;
     border-style: solid;
     border-radius: 10%;
-    
+
     /*box-shadow: 4px 4px 14px rgb(0, 0, 25);*/
 }
 
-.info-about{
-    margin: auto;   
+.info-about {
+    margin: auto;
     margin-top: 20px;
     max-width: 60%;
 
-    background-color: white; 
+    background-color: white;
 
     border: 5px solid orange;
     border-radius: 8%;
 }
-@media(max-width:460px)  {
-    .info-about{    
+
+@media(max-width:460px) {
+    .info-about {
         max-width: 80% !important;
     }
-    body{
+
+    body {
         font-size: 12px;
     }
 }
 
-.little-info{
+.little-info {
     max-width: 60%;
     margin: auto;
     padding: 10px;
@@ -66,7 +71,7 @@ body{
 }
 
 
-.information-block{
+.information-block {
     max-width: 60%;
     margin: auto;
 }
@@ -75,9 +80,10 @@ body{
 .project-photo {
     margin: 5%;
 }
+
 .project-photo img {
     max-width: 80%;
-    
+
     border: 2px;
     border-color: red;
     border-style: solid;
@@ -89,16 +95,77 @@ body{
     height: 50%;
     display: flex;
 }
-.autor{
+
+.autor {
     width: 100%;
     text-align: center;
 }
 
 @keyframes hoverAnimation {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
-.vk:hover{
+
+.vk:hover {
     animation: hoverAnimation 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+.vk:active {
+    box-shadow: 2px 2px 5px black;
+}
+
+.button-my-photo {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: orange;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-my-photo:not(:disabled):hover,
+.button-my-photo:not(:disabled):focus {
+    outline: 0;
+    background: orangered;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .2), 0 3px 8px 0 rgba(0, 0, 0, .15);
+}
+
+.button-my-photo:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+}
+
+nav{
+    display: flex;
+}
+.to-start {
+    width: 100%;
+    color: orange;
+    text-align:center;
+}
+.to-start p{
+    margin: 5px;
 }
