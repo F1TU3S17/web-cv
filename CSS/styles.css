@@ -44,10 +44,9 @@ body {
     max-width: 100%;
     margin: 10px;
     border: 2px;
-    border-color: red;
-    border-style: solid;
-    border-radius: 10%;
-
+    
+    
+    
     /*box-shadow: 4px 4px 14px rgb(0, 0, 25);*/
 }
 
@@ -92,11 +91,15 @@ body {
 
 .project-photo img {
     max-width: 80%;
-
+    margin: 30px;
     border: 2px;
     border-color: red;
     border-style: solid;
     border-radius: 10%;
+    box-shadow: 0 0 0 4px #FFA500, /* Внешняя обводка */
+                0 0 0 10px #F5F5F5, /* Внутренняя обводка */
+                0 0 0 16px #FFA500, /* Внутренняя обводка */
+                0 0 0 22px #FF1F00; /* Внутренняя обводка */
 
 }
 

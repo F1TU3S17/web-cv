@@ -1,11 +1,13 @@
-@keyframes toGo{
-    0%{
+@keyframes toGo {
+    0% {
         opacity: 0.5;
     }
-    50%{
+
+    50% {
         opacity: 0.7;
     }
-    100%{
+
+    100% {
         transform: scale(1);
         transform: translateY(0);
     }
@@ -16,10 +18,12 @@
         opacity: 0.8;
         transform: scale(1);
     }
-    50%{
+
+    50% {
         opacity: 0.4;
     }
-    100%{
+
+    100% {
         opacity: 0.1;
     }
 }
@@ -56,9 +60,10 @@
     /*animation: toGo 1s ease-in-out forwards;*/
 }
 
-.vk{
+.vk {
     margin: auto;
 }
+
 .vk:hover {
     animation: hoverAnimation 0.5s ease-in-out;
     opacity: 0.8;

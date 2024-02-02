@@ -13,6 +13,5 @@ logo.addEventListener("click",() => {
         leftPanel.style.animation ="toBack 1s ease-in-out forwards";
         f = 0;  
     };
-    console.log(f);
 });
 
