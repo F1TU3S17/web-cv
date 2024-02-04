@@ -46,16 +46,7 @@
     margin: 5%;
     width: 50%;
 }
-@media(max-width:560px) {
-    .project-photo-content{
-        margin-top: 20% !important;
-    }
-    .modal-project{
-        margin-top: 40%;
-        min-height: 30%; 
-        max-height: 65%;
-    }
-}
+
 .project-photo-content img{
     width: 100%;
 }
@@ -64,3 +55,23 @@
     margin-top: 5%;
 }
 
+@media(max-width:560px) {
+    .project-photo-content{
+        display: block;
+        float: right;
+        margin: 15% ;
+        margin-left: 22% !important;
+
+
+    }
+    .modal-project{
+        margin-top: 40%;
+        min-height: 30%; 
+        max-height: 65%;
+    }
+    .project-text-content {
+        display: block;
+        float: left;
+        margin: 5%;
+    }
+}
