@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="stylesheet" href="/CSS/modal-styles.css">
     <link rel="stylesheet" href="/CSS/leftpanel-styles.css">
+    <link rel="stylesheet" href="/CSS/modal-project.css">
     <title>Резюме</title>
 </head>
 
@@ -63,7 +64,27 @@
                 <button class="button-my-photo">
                     Больше информации
                 </button>
-            </div>
+            </div>  
+            <div class='modal-background'></div>
+                <div class="modal-continer">
+                    <div class="X">
+                        &times;
+                    </div>
+                    <div class="modal-photos-cont">
+                        <img src="/image/hard-working.jpg" class="photo1-modal" alt="photo1">
+                        <img src="/image/olimp.jpg" class="photo2-modal" alt="photo2" style="display: none;">
+                        <img src="/image/ice.jpg" class="photo3-modal" alt="photo3" style="display: none;">
+                        <img src="/image/autumn-hakaton.jpg" class="photo4-modal" alt="photo4" style="display: none;">
+                        <img src="/image/sigmas.jpg" class="photo5-modal" alt="photo5" style="display: none;">
+                    </div>
+                    <div>
+                        <p class="modal-text">Это все я на различных мероприятиях,а также на отдыхе :3 </p>
+                    </div>
+                    <div class="buttons">
+                        <button class="left-button"> <img src="/image/arrow-left-circle-svgrepo-com.svg"> </button>
+                        <button class="right-button"> <img src="/image/arrow-right-circle-svgrepo-com.svg"> </button>
+                    </div>
+                </div>
         </section>
 
         <section>
@@ -71,14 +92,15 @@
             <div class="info-about">
                 <h2 align="center">Проекты</h2>
                 <div class="project-photo">
-                    <table>
+                    <table class = "project-table">
                         <tr>
                             <td>
                                 <a href="https://virtualmuseum.vercel.app/" target="_blank" title="Увидеть проект"><img
-                                        src="/image/museum.png" alt="museum scrin"><a />
+                                    src="/image/museum.png" alt="museum scrin"><a/>
                             </td>
                             <td>
                                 <p>Проект : сайт-вирутальный музей города Таганрог</p>
+                                <button class="button-project">Подробнее</button>
                             </td>
                         </tr>
                         <tr>
@@ -92,6 +114,7 @@
                                     Проект : игровая приставка. <br />
                                     Результат : победа в номинации "лучшая презентация"
                                 </p>
+                                <button class="button-project">Подробнее</button>
                             </td>
                         </tr>
                         <tr>
@@ -102,12 +125,26 @@
                                 <p>
                                     Участвовал в хакатоне "Cyber Garden". <br />
                                     Проект : сайт для компании "Евраз"
+                                    <button class="button-project">Подробнее</button>
                                 </p>
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
+
+            <div class = "modal-project">
+                <div class="X-modal-project">
+                    &times;
+                </div>
+                <div class="project-photo-content">
+                </div>
+
+                <div class="project-text-content">
+                    
+                </div>
+            </div>
+
         </section>
     </main>
     <hr color="orange">
@@ -124,29 +161,10 @@
         </div>
     </footer>
 
-    <div class='modal-background'>
-    </div>
-    <div class="modal-continer">
-        <div class="X">
-            &times;
-        </div>
-        <div class="modal-photos-cont">
-            <img src="/image/hard-working.jpg" class="photo1-modal" alt="photo1">
-            <img src="/image/olimp.jpg" class="photo2-modal" alt="photo2" style="display: none;">
-            <img src="/image/ice.jpg" class="photo3-modal" alt="photo3" style="display: none;">
-            <img src="/image/autumn-hakaton.jpg" class="photo4-modal" alt="photo4" style="display: none;">
-            <img src="/image/sigmas.jpg" class="photo5-modal" alt="photo5" style="display: none;">
-        </div>
-        <div>
-            <p class="modal-text">Это все я на различных мероприятиях,а также на отдыхе :3 </p>
-        </div>
-        <div class="buttons">
-            <button class="left-button"> <img src="/image/arrow-left-circle-svgrepo-com.svg"> </button>
-            <button class="right-button"> <img src="/image/arrow-right-circle-svgrepo-com.svg"> </button>
-        </div>
-    </div>
+  
 
     <script src="JS/modalScript.js"></script>
     <script src="JS/modalSocialScript.js"></script>
+    <script src="JS/modalProjectScript.js"></script>
 </body>
 </html>

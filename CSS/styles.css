@@ -63,7 +63,7 @@ body {
     }
 
     body {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 }
 
@@ -88,14 +88,22 @@ body {
 .project-photo img {
     max-width: 80%;
     margin: 20px;
+    margin-right: 30px;
     
     border: 2px;
     border-color: red;
     border-style: solid;
     border-radius: 10%;
-    box-shadow: 0 0 0 4px #FFA500, /* Внешняя обводка */
-                0 0 0 8px #FF1F00; /* Внутренняя обводка */
-
+    box-shadow: 0 0 0 4px #FFD600,
+                0 0 0 8px #FFA500,
+                0 0 0 12px #FF1F00; 
+}
+@media (max-width: 620px){
+    .project-photo img{
+        box-shadow: 0 0 0 2px #FFD600,
+                0 0 0 4px #FFA500,
+                0 0 0 6px #FF1F00; 
+    }
 }
 
 .podval {
@@ -124,7 +132,7 @@ body {
 
 
 
-.button-my-photo {
+.button-my-photo ,.button-project {
     display: block;
     margin: auto;
     margin-top: 20px;
@@ -146,16 +154,21 @@ body {
 }
 
 .button-my-photo:not(:disabled):hover,
-.button-my-photo:not(:disabled):focus {
+.button-my-photo:not(:disabled):focus,
+.button-project:not(:disabled):hover,
+.button-project:not(:disabled):focus {
     outline: 0;
     background: orangered;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, .2), 0 3px 8px 0 rgba(0, 0, 0, .15);
 }
 
-.button-my-photo:disabled {
+.button-my-photo:disabled , .button-project:disabled{
     filter: saturate(0.2) opacity(0.5);
     -webkit-filter: saturate(0.2) opacity(0.5);
     cursor: not-allowed;
+}
+.button-project{
+    margin: 0;
 }
 
 nav{
