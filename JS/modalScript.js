@@ -29,7 +29,6 @@ lButton.addEventListener("click", () => {
         i--;
         modalPhotoCont.children[i].style.display = "block";
     }
-
 });
 
 rButton.addEventListener("click", () => {
@@ -43,5 +42,4 @@ rButton.addEventListener("click", () => {
         i++;
         modalPhotoCont.children[i].style.display = "block";
     }
-
 });

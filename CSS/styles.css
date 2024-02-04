@@ -21,7 +21,7 @@ body {
 }
 
 #logo {
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
     position: fixed;
     top:0;
     margin-top: 10px;
@@ -37,16 +37,12 @@ body {
 #logo:hover {
     cursor: pointer;
     opacity: 0.7;
-    
 }
 
 .my-photo img {
     max-width: 100%;
     margin: 10px;
     border: 2px;
-    
-    
-    
     /*box-shadow: 4px 4px 14px rgb(0, 0, 25);*/
 }
 
@@ -92,12 +88,12 @@ body {
 .project-photo img {
     max-width: 80%;
     margin: 20px;
+    
     border: 2px;
     border-color: red;
     border-style: solid;
     border-radius: 10%;
     box-shadow: 0 0 0 4px #FFA500, /* Внешняя обводка */
-                0 0 0 5px #F5F5F5, /* Внутренняя обводка */
                 0 0 0 8px #FF1F00; /* Внутренняя обводка */
 
 }
