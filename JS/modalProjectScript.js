@@ -22,7 +22,7 @@ for (let i = 0 ; i < buttons.length ; i++){
         modalImages.innerHTML = arrImages[i];
         modalTexts.innerHTML = arrTexts[i];
     });
-}
+};
 
 
 
