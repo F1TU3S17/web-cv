@@ -1,116 +1,111 @@
-
 .modal-background {
-    position: fixed;
-    display: none;
+  position: fixed;
+  display: none;
 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    background-color: black;
-    opacity: 0.3;
+  background-color: black;
+  opacity: 0.3;
 }
 
 .modal-continer {
-    z-index: 999;
-    display: none;
-    position: fixed;
-    background: white;
-    /*Отцентрует что-угодно*/
-    max-width: 80%;
-    max-height: 85%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid orange;
-    border-radius: 8%;
-    animation: vsplyv 0.6s ease-in-out;
+  z-index: 999;
+  display: none;
+  position: fixed;
+  background: white;
+  /*Отцентрует что-угодно*/
+  max-width: 80%;
+  max-height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid orange;
+  border-radius: 8%;
+  animation: vsplyv 0.6s ease-in-out;
 }
 
 .X {
-    font-size: 40px;
-    float: right;
-    margin-right: 10px;
-    width: 5%;
-    transition-duration: 0.2s;
+  font-size: 40px;
+  float: right;
+  margin-right: 10px;
+  width: 5%;
+  transition-duration: 0.2s;
 }
 
 .X:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .modal-photos-cont img {
-    display: block;
-    margin: auto;
-    width: 75%;
+  display: block;
+  margin: auto;
+  width: 75%;
 }
 
 .modal-photos-cont {
-    display: block;
-    width: 100%;
-    height: 80%;
-    margin-top: 60px;
+  display: block;
+  width: 100%;
+  height: 80%;
+  margin-top: 60px;
 }
 
-
 .modal-text {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .photo5-modal {
-    max-width: 40%;
+  max-width: 40%;
 }
 
 .buttons {
-    display: flex;
-    max-width: 100%;
-    margin: 20px;
-    margin-top: 0;
-    align-items: center;
-
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  margin-top: 0;
+  align-items: center;
 }
 
 .left-button,
 .right-button {
-    display: block;
-    margin: auto;
-    width: 10%;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition-duration: 0.5s;
+  display: block;
+  margin: auto;
+  width: 10%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 .left-button img,
 .right-button img {
-    width: 100%;
-    margin: 10px;
+  width: 100%;
+  margin: 10px;
 }
 
 .left-button:hover,
 .right-button:hover {
-    transform: scale(1.2);
-
+  transform: scale(1.2);
 }
 
-@media(max-width:700px) {
-    .modal-photos-cont {
-        display: block;
-        max-width: 100%;
-        height: 80%;
-    }
+@media (max-width: 700px) {
+  .modal-photos-cont {
+    display: block;
+    max-width: 100%;
+    height: 80%;
+  }
 
-    .left-button,
-    .right-button {
-        display: block;
-        margin: auto;
-        width: 40%;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
+  .left-button,
+  .right-button {
+    display: block;
+    margin: auto;
+    width: 40%;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 }

@@ -1,77 +1,74 @@
 @keyframes vsplyv {
-    0%{
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50%{
-        transform: translateY(10);
-    }
+  50% {
+    transform: translateY(10);
+  }
 
-    100%{
-        transform: translateY(15);
-    }
+  100% {
+    transform: translateY(15);
+  }
 }
 
-
-.modal-project{
-    display: none;
-    z-index: 999;
-    position: fixed;
-    background: white;
-    width: 80%;
-    min-height: 50%; 
-    max-height: 85%;
-    top:0;
-    border: 5px solid orange;
-    border-radius: 8%;
-    transform: translate(10%,7.5%);
-    animation: vsplyv 0.6s ease-in-out;
+.modal-project {
+  display: none;
+  z-index: 999;
+  position: fixed;
+  background: white;
+  width: 80%;
+  min-height: 50%;
+  max-height: 85%;
+  top: 0;
+  border: 5px solid orange;
+  border-radius: 8%;
+  transform: translate(10%, 7.5%);
+  animation: vsplyv 0.6s ease-in-out;
 }
 
-.X-modal-project{
-    font-size: 40px;
-    float: right;
-    margin-right: 10px;
-    width: 5%;
-    transition-duration: 0.2s;
-} 
+.X-modal-project {
+  font-size: 40px;
+  float: right;
+  margin-right: 10px;
+  width: 5%;
+  transition-duration: 0.2s;
+}
 .X-modal-project:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
-.project-photo-content{
+.project-photo-content {
+  float: left;
+  overflow: hidden;
+  margin: 5%;
+  width: 50%;
+}
+
+.project-photo-content img {
+  width: 100%;
+}
+.project-text-content {
+  display: flex;
+  margin-top: 5%;
+}
+
+@media (max-width: 560px) {
+  .project-photo-content {
+    display: block;
+    float: right;
+    margin: 15%;
+    margin-left: 22% !important;
+  }
+  .modal-project {
+    margin-top: 40%;
+    min-height: 30%;
+    max-height: 65%;
+  }
+  .project-text-content {
+    display: block;
     float: left;
-    overflow: hidden;
     margin: 5%;
-    width: 50%;
-}
-
-.project-photo-content img{
-    width: 100%;
-}
-.project-text-content{
-    display: flex;
-    margin-top: 5%;
-}
-
-@media(max-width:560px) {
-    .project-photo-content{
-        display: block;
-        float: right;
-        margin: 15% ;
-        margin-left: 22% !important;
-
-
-    }
-    .modal-project{
-        margin-top: 40%;
-        min-height: 30%; 
-        max-height: 65%;
-    }
-    .project-text-content {
-        display: block;
-        float: left;
-        margin: 5%;
-    }
+  }
 }
